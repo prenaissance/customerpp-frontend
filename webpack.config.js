@@ -56,8 +56,9 @@ const config = {
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json", ".html"],
         alias: {
-            assets: path.join(__dirname, "src", "assets"),
-            common: path.join(__dirname, "src", "common")
+            "@assets": path.join(__dirname, "src", "assets"),
+            "@common": path.join(__dirname, "src", "common"),
+            "@testHelpers": path.join(__dirname, "src", "__testHelpers__"),
         }
     },
     devServer: {

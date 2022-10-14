@@ -1,11 +1,9 @@
 import { FC } from "react";
 
-type SettingsProps = {}
+type Props = {};
 
-const Settings: FC = (props: SettingsProps) => {
-  return (
-    <div>Settings</div>
-  )
-}
+const Settings: FC = (props: Props) => {
+  return <div>Settings</div>;
+};
 
 export default Settings;

@@ -1,18 +1,21 @@
-import { Box } from "@mui/material";
 import { FC } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./layout/Navbar/Navbar";
-import Router from "./routes/Router";
+import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import ThemeWrapper from "@common/theme/ThemeWrapper";
+import Layout from "./layout/Layout";
+
+const queryClient = new QueryClient();
 
 const App: FC = () => {
-    return (
+  return (
+    <ThemeWrapper>
+      <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-            <Box sx={{ width: "100%", m: 0, p: 0 }}>
-                <Navbar />
-                <Router />
-            </Box>
+          <Layout />
         </BrowserRouter>
-    );
+      </QueryClientProvider>
+    </ThemeWrapper>
+  );
 };
 
 export default App;

@@ -1,9 +1,9 @@
-type HomeProps = {}
+import { FC } from "react";
 
-const Home = (props: HomeProps) => {
-  return (
-    <div>Home</div>
-  )
-}
+type HomeProps = {};
 
-export default Home
+const Home: FC = (props: HomeProps) => {
+  return <div>Home</div>;
+};
+
+export default Home;
