@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Box, Container, Divider, Paper, Theme, Typography, SxProps, useMediaQuery, Toolbar, Button, Tab, styled } from "@mui/material";
-import { FC, ReactNode, useState } from "react";
+import { Box, Divider, Theme, Typography, useMediaQuery, Toolbar, Button, styled } from "@mui/material";
+import { FC } from "react";
 import { Settings as SettingsIcon } from "@mui/icons-material";
 import { colors } from "@common/theme/utils/consts";
 import DrawerComp from "@common/components/ui/Drawer/Drawer";
@@ -22,6 +22,7 @@ const PageLink: FC<PageLinkProps> = ({ to, title }) => {
 };
 
 const BootstrapButton = styled(Button)({
+  textTransform: 'none',
   borderRadius: "2rem",
   '&:hover': {
     backgroundColor: 'primary.main',
@@ -39,7 +40,7 @@ const Navbar: FC = () => {
         <DrawerComp />
         <Box sx={{ ml: "auto" }}>
           <Link to="/settings">
-            <SettingsIcon sx={{ width: "3rem", height: "3rem", color: "primary.contrastText" }} />
+            <SettingsIcon sx={{ width: "2.5rem", height: "2.5rem", color: "primary.contrastText" }} />
           </Link>
         </Box>
       </> :
@@ -64,11 +65,12 @@ const Navbar: FC = () => {
             alt="logo"
             src={require("/assets/images/logo.png")}
           />
-            <BootstrapButton variant="contained" disableRipple>
+            <BootstrapButton variant="contained" disableRipple >
               <PageLink to="/" title="Home" />
             </BootstrapButton>
 
             <Button sx={{
+              textTransform: 'none',
               borderRadius: "2rem",
               '&:hover': {
                 backgroundColor: 'primary.main',
@@ -79,6 +81,7 @@ const Navbar: FC = () => {
             </Button>
 
             <Button sx={{
+              textTransform: 'none',
               borderRadius: "2rem",
               '&:hover': {
                 backgroundColor: 'primary.main',
@@ -89,18 +92,19 @@ const Navbar: FC = () => {
             </Button>
 
             <Button sx={{
+              textTransform: 'none',
               borderRadius: "2rem",
               '&:hover': {
                 backgroundColor: 'primary.main',
                 opacity: [0.9, 0.8, 0.7],
               },
             }}>
-              <PageLink to="/login" title="Login" />
+              <PageLink to="/login" title="Log In" />
             </Button>
 
             <Box sx={{ ml: "auto" }}>
               <Link to="/settings">
-                <SettingsIcon sx={{ width: "3rem", height: "3rem", color: "primary.contrastText" }} />
+                <SettingsIcon sx={{ width: "2.5rem", height: "2.5rem", color: "primary.contrastText" }} />
               </Link>
             </Box>
           </>

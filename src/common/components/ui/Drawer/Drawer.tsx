@@ -70,7 +70,7 @@ const DrawerComp = () => {
                                         opacity: [0.9, 0.8, 0.7],
                                     },
                                 }}>
-                                    <PageLink to="/login" title="Login" />
+                                    <PageLink to="/login" title="Log In" />
                                 </ListItem>
                             </ListItemText>
                         </ListItemIcon>
