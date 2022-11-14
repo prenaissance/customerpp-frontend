@@ -32,14 +32,18 @@ const config = {
             },
             {
                 test: /\.svg$/,
-                type: 'asset/inline'
+                type: "asset/inline"
+            },
+            {
+                test: /\.json$/,
+                type: "json"
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             minify: false,
-            title: "Hr Helper",
+            title: "Customer++",
             template: path.join(__dirname, "src", "index.html"),
         }),
         new MiniCssExtractPlugin({
@@ -59,6 +63,7 @@ const config = {
             "@assets": path.join(__dirname, "src", "assets"),
             "@common": path.join(__dirname, "src", "common"),
             "@testHelpers": path.join(__dirname, "src", "__testHelpers__"),
+            "@pages": path.join(__dirname, "src", "pages"),
         }
     },
     devServer: {

@@ -1,0 +1,802 @@
+[
+  {
+    "clicksToConvert": 30,
+    "clicksToShare": 31,
+    "timeToConvert": 29506.548,
+    "timeToShare": 29507.064,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 6,
+    "clicksToShare": 7,
+    "timeToConvert": 912.148,
+    "timeToShare": 912.375,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 8,
+    "clicksToShare": 6,
+    "timeToConvert": 612.597,
+    "timeToShare": 217.263,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 8,
+    "timeToConvert": 270.523,
+    "timeToShare": 270.928,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 16,
+    "clicksToShare": 10,
+    "timeToConvert": 91191.903,
+    "timeToShare": 88579.942,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 23,
+    "clicksToShare": 2,
+    "timeToConvert": 624.781,
+    "timeToShare": 21.12,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 200,
+    "clicksToShare": 201,
+    "timeToConvert": 1139475.378,
+    "timeToShare": 1139475.93,
+    "device": "Desktop",
+    "locale": "en"
+  },
+  {
+    "clicksToConvert": 14,
+    "clicksToShare": 15,
+    "timeToConvert": 2748.676,
+    "timeToShare": 2749.091,
+    "device": "Desktop",
+    "locale": "en"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 9,
+    "timeToConvert": 443.62,
+    "timeToShare": 444.237,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 19,
+    "clicksToShare": 21,
+    "timeToConvert": 990.044,
+    "timeToShare": 990.34,
+    "device": "Mobile",
+    "locale": "zh-CN"
+  },
+  {
+    "clicksToConvert": 16,
+    "clicksToShare": 18,
+    "timeToConvert": 325515.015,
+    "timeToShare": 325515.544,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 61,
+    "clicksToShare": 62,
+    "timeToConvert": 8014.955,
+    "timeToShare": 8015.201,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 23,
+    "clicksToShare": 20,
+    "timeToConvert": 214191.991,
+    "timeToShare": 213670.727,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 19,
+    "clicksToShare": 4,
+    "timeToConvert": 248755.082,
+    "timeToShare": 430.943,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 16,
+    "clicksToShare": 2,
+    "timeToConvert": 739.237,
+    "timeToShare": 84.007,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 10,
+    "clicksToShare": 11,
+    "timeToConvert": 269.277,
+    "timeToShare": 269.451,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 10,
+    "timeToConvert": 174.435,
+    "timeToShare": 174.801,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 22,
+    "clicksToShare": 6,
+    "timeToConvert": 1311.71,
+    "timeToShare": 160.97,
+    "device": "Mobile",
+    "locale": "zh-CN"
+  },
+  {
+    "clicksToConvert": 14,
+    "clicksToShare": 15,
+    "timeToConvert": 1019.857,
+    "timeToShare": 1020.171,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 24,
+    "clicksToShare": 25,
+    "timeToConvert": 421202.593,
+    "timeToShare": 421203.008,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 8,
+    "clicksToShare": 9,
+    "timeToConvert": 920.637,
+    "timeToShare": 922.733,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 6,
+    "clicksToShare": 8,
+    "timeToConvert": 593776.978,
+    "timeToShare": 593777.375,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 4,
+    "clicksToShare": 5,
+    "timeToConvert": 118.265,
+    "timeToShare": 118.73,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 21,
+    "clicksToShare": 20,
+    "timeToConvert": 230208.124,
+    "timeToShare": 229980.056,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 15,
+    "clicksToShare": 16,
+    "timeToConvert": 105457.861,
+    "timeToShare": 105458.079,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 23,
+    "clicksToShare": 5,
+    "timeToConvert": 2244.894,
+    "timeToShare": 190.842,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 5,
+    "clicksToShare": 4,
+    "timeToConvert": 869.499,
+    "timeToShare": 340.054,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 47,
+    "clicksToShare": 48,
+    "timeToConvert": 2766.374,
+    "timeToShare": 2766.798,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 21,
+    "clicksToShare": 20,
+    "timeToConvert": 192439.777,
+    "timeToShare": 192255.065,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 11,
+    "timeToConvert": 548.363,
+    "timeToShare": 548.75,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 41,
+    "clicksToShare": 3,
+    "timeToConvert": 1661.345,
+    "timeToShare": 71.137,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 17,
+    "clicksToShare": 19,
+    "timeToConvert": 832.261,
+    "timeToShare": 832.553,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 27,
+    "clicksToShare": 29,
+    "timeToConvert": 934.959,
+    "timeToShare": 935.148,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 8,
+    "clicksToShare": 9,
+    "timeToConvert": 431.154,
+    "timeToShare": 432.013,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 38,
+    "clicksToShare": 5,
+    "timeToConvert": 1155135.944,
+    "timeToShare": 378489.768,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 63,
+    "clicksToShare": 44,
+    "timeToConvert": 22791.164,
+    "timeToShare": 14871.062,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 10,
+    "timeToConvert": 554.153,
+    "timeToShare": 554.565,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 8,
+    "clicksToShare": 10,
+    "timeToConvert": 537.964,
+    "timeToShare": 538.179,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 13,
+    "clicksToShare": 15,
+    "timeToConvert": 881.101,
+    "timeToShare": 881.69,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 15,
+    "clicksToShare": 17,
+    "timeToConvert": 2016.195,
+    "timeToShare": 2017.452,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 41,
+    "clicksToShare": 25,
+    "timeToConvert": 650004.456,
+    "timeToShare": 568640.002,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 29,
+    "clicksToShare": 31,
+    "timeToConvert": 102200.601,
+    "timeToShare": 102200.771,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 29,
+    "clicksToShare": 24,
+    "timeToConvert": 2812.439,
+    "timeToShare": 1908.58,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 8,
+    "timeToConvert": 328.875,
+    "timeToShare": 329.138,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 20,
+    "clicksToShare": 17,
+    "timeToConvert": 42582.723,
+    "timeToShare": 42345.002,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 30,
+    "clicksToShare": 32,
+    "timeToConvert": 9658.817,
+    "timeToShare": 9660.759,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 8,
+    "clicksToShare": 3,
+    "timeToConvert": 478.039,
+    "timeToShare": 65.221,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 15,
+    "clicksToShare": 16,
+    "timeToConvert": 1292.403,
+    "timeToShare": 1292.793,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 13,
+    "clicksToShare": 15,
+    "timeToConvert": 1278113.961,
+    "timeToShare": 1278114.371,
+    "device": "Desktop",
+    "locale": "en-GB"
+  },
+  {
+    "clicksToConvert": 14,
+    "clicksToShare": 15,
+    "timeToConvert": 652.269,
+    "timeToShare": 652.679,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 16,
+    "clicksToShare": 17,
+    "timeToConvert": 1566.918,
+    "timeToShare": 1567.966,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 19,
+    "clicksToShare": 2,
+    "timeToConvert": 8594.497,
+    "timeToShare": 26.843,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 34,
+    "clicksToShare": 32,
+    "timeToConvert": 112475.058,
+    "timeToShare": 111753.603,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 26,
+    "clicksToShare": 4,
+    "timeToConvert": 16669.313,
+    "timeToShare": 344.687,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 5,
+    "timeToConvert": 19271.165,
+    "timeToShare": 19257.635,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 23,
+    "clicksToShare": 20,
+    "timeToConvert": 1425.38,
+    "timeToShare": 1235.865,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 5,
+    "timeToConvert": 801.214,
+    "timeToShare": 400.348,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 15,
+    "clicksToShare": 17,
+    "timeToConvert": 1158.352,
+    "timeToShare": 1158.565,
+    "device": "Desktop",
+    "locale": "ja"
+  },
+  {
+    "clicksToConvert": 10,
+    "clicksToShare": 2,
+    "timeToConvert": 170.923,
+    "timeToShare": 9.865,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 22,
+    "clicksToShare": 23,
+    "timeToConvert": 1101.18,
+    "timeToShare": 1101.73,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 21,
+    "clicksToShare": 22,
+    "timeToConvert": 1729.055,
+    "timeToShare": 1729.462,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 15,
+    "clicksToShare": 16,
+    "timeToConvert": 730.836,
+    "timeToShare": 731.157,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 9,
+    "timeToConvert": 741.042,
+    "timeToShare": 744.087,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 8,
+    "clicksToShare": 10,
+    "timeToConvert": 411.626,
+    "timeToShare": 412.386,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 33,
+    "clicksToShare": 34,
+    "timeToConvert": 1038222.051,
+    "timeToShare": 1038246.596,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 19,
+    "clicksToShare": 20,
+    "timeToConvert": 3123.921,
+    "timeToShare": 3124.235,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 5,
+    "clicksToShare": 4,
+    "timeToConvert": 361.298,
+    "timeToShare": 218.621,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 42,
+    "clicksToShare": 43,
+    "timeToConvert": 5750.831,
+    "timeToShare": 5753.13,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 16,
+    "clicksToShare": 17,
+    "timeToConvert": 1026.481,
+    "timeToShare": 1027.046,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 11,
+    "timeToConvert": 1387034.254,
+    "timeToShare": 1387034.651,
+    "device": "Desktop",
+    "locale": "en"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 2,
+    "timeToConvert": 361.018,
+    "timeToShare": 24.777,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 70,
+    "clicksToShare": 49,
+    "timeToConvert": 929795.148,
+    "timeToShare": 927860.893,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 10,
+    "timeToConvert": 2166.779,
+    "timeToShare": 2167.865,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 17,
+    "clicksToShare": 14,
+    "timeToConvert": 891.856,
+    "timeToShare": 580.911,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 4,
+    "clicksToShare": 6,
+    "timeToConvert": 12076.432,
+    "timeToShare": 12076.774,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 11,
+    "clicksToShare": 12,
+    "timeToConvert": 392.84,
+    "timeToShare": 393.093,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 17,
+    "clicksToShare": 9,
+    "timeToConvert": 1156.362,
+    "timeToShare": 390.598,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 3,
+    "clicksToShare": 5,
+    "timeToConvert": 350.269,
+    "timeToShare": 350.815,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 51,
+    "clicksToShare": 2,
+    "timeToConvert": 1214663.497,
+    "timeToShare": 37.617,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 16,
+    "clicksToShare": 17,
+    "timeToConvert": 403.812,
+    "timeToShare": 404.015,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 27,
+    "clicksToShare": 2,
+    "timeToConvert": 264129.683,
+    "timeToShare": 50.135,
+    "device": "Mobile",
+    "locale": "uk-UA"
+  },
+  {
+    "clicksToConvert": 15,
+    "clicksToShare": 5,
+    "timeToConvert": 1281.064,
+    "timeToShare": 218.917,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 8,
+    "timeToConvert": 784.721,
+    "timeToShare": 786.307,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 20,
+    "clicksToShare": 22,
+    "timeToConvert": 928277.103,
+    "timeToShare": 928277.545,
+    "device": "Desktop",
+    "locale": "ja"
+  },
+  {
+    "clicksToConvert": 38,
+    "clicksToShare": 40,
+    "timeToConvert": 121005.364,
+    "timeToShare": 121005.617,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 36,
+    "clicksToShare": 37,
+    "timeToConvert": 9605.673,
+    "timeToShare": 9606.177,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 10,
+    "timeToConvert": 397.773,
+    "timeToShare": 397.984,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 79,
+    "clicksToShare": 81,
+    "timeToConvert": 335041.624,
+    "timeToShare": 335043.169,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 13,
+    "clicksToShare": 14,
+    "timeToConvert": 239409.374,
+    "timeToShare": 239410.044,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 12,
+    "clicksToShare": 14,
+    "timeToConvert": 80600.671,
+    "timeToShare": 80600.897,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 7,
+    "clicksToShare": 9,
+    "timeToConvert": 313.242,
+    "timeToShare": 313.457,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 22,
+    "clicksToShare": 23,
+    "timeToConvert": 1123289.225,
+    "timeToShare": 1123289.5,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 19,
+    "clicksToShare": 20,
+    "timeToConvert": 992.098,
+    "timeToShare": 992.97,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 66,
+    "clicksToShare": 2,
+    "timeToConvert": 6820.306,
+    "timeToShare": 151.285,
+    "device": "Desktop",
+    "locale": "zh-CN"
+  },
+  {
+    "clicksToConvert": 19,
+    "clicksToShare": 20,
+    "timeToConvert": 1204960.89,
+    "timeToShare": 1204961.077,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 9,
+    "clicksToShare": 10,
+    "timeToConvert": 1034.687,
+    "timeToShare": 1035.736,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 33,
+    "clicksToShare": 34,
+    "timeToConvert": 4409.483,
+    "timeToShare": 4409.639,
+    "device": "Desktop",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 10,
+    "clicksToShare": 11,
+    "timeToConvert": 275.325,
+    "timeToShare": 275.811,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 17,
+    "clicksToShare": 4,
+    "timeToConvert": 556.959,
+    "timeToShare": 41.755,
+    "device": "Mobile",
+    "locale": "en-US"
+  },
+  {
+    "clicksToConvert": 18,
+    "clicksToShare": 20,
+    "timeToConvert": 888.001,
+    "timeToShare": 888.449,
+    "device": "Desktop",
+    "locale": "en-US"
+  }
+]

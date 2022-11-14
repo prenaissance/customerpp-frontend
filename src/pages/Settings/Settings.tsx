@@ -1,8 +1,4 @@
-import { FC } from "react";
-
-type Props = {};
-
-const Settings: FC = (props: Props) => {
+const Settings = () => {
   return <div>Settings</div>;
 };
 

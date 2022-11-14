@@ -1,18 +1,15 @@
-import { clicksToConvertData, timeToConvertData } from "@testHelpers/fixtures/metricsData";
+import statisticsData from "@testHelpers/fixtures/api.json";
 import { delayedRequest } from "@testHelpers/misc/requests";
 
-export const getClicksToConvert = async () => {
-  return delayedRequest(clicksToConvertData);
+export type StatisticsDf = {
+  device: "Desktop" | "Mobile";
+  locale: string;
+  clicksToConvert: number;
+  clicksToShare: number;
+  timeToConvert: number;
+  timeToShare: number;
 };
 
-export const getTimeToConvert = async () => {
-  return delayedRequest(timeToConvertData);
-};
-
-export const getClicksToShare = async () => {
-  return delayedRequest(clicksToConvertData);
-};
-
-export const getTimeToShare = async () => {
-  return delayedRequest(timeToConvertData);
+export const getStatistics = async () => {
+  return delayedRequest(statisticsData) as Promise<StatisticsDf[]>;
 };

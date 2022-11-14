@@ -2,23 +2,23 @@ import useWindowSize from "@common/hooks/useWindowSize";
 import { Box, Typography } from "@mui/material";
 import { useRef } from "react";
 import { FC, ReactNode } from "react";
-import { Line, LineChart } from "recharts";
-import HoverableCard from "../ui/HoverableCard/HoverableCard";
+import { AreaChart, Line, LineChart } from "recharts";
 
-type CurvePreviewCardProps = {
+type AdvancedAreaChartProps = {
   data: any[];
+  groups: {
+    name: string;
+    onClick: () => any[];
+  };
   color?: string;
-  icon?: ReactNode;
-  height?: string;
   title?: string;
   aspectRatio?: number;
   dataKey?: string;
 };
 
-const CurvePreviewCard: FC<CurvePreviewCardProps> = ({
+const AdvancedAreaChart: FC<AdvancedAreaChartProps> = ({
   data,
   color = "#888",
-  icon,
   title = "",
   aspectRatio = 2,
   dataKey = "y",
@@ -27,22 +27,7 @@ const CurvePreviewCard: FC<CurvePreviewCardProps> = ({
   const { width, height } = useWindowSize(ref);
 
   return (
-    <HoverableCard>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-          height: "auto",
-          width: 1,
-        }}
-      >
-        <Typography variant="caption" fontSize="1.3em" color="primary.contrastText">
-          {title}
-        </Typography>
-        <Box>{icon}</Box>
-      </Box>
+    <>
       <Box
         ref={ref}
         sx={{
@@ -50,11 +35,12 @@ const CurvePreviewCard: FC<CurvePreviewCardProps> = ({
           width: 1,
           display: "flex",
           justifyContent: "center",
+          alignContent: "center",
           alignItems: "center",
         }}
       >
         <Box>
-          <LineChart
+          <AreaChart
             data={data}
             width={Math.min(height * aspectRatio, width)}
             height={Math.min(height * aspectRatio, width) / aspectRatio}
@@ -68,11 +54,11 @@ const CurvePreviewCard: FC<CurvePreviewCardProps> = ({
               strokeWidth={3}
               animationDuration={500}
             ></Line>
-          </LineChart>
+          </AreaChart>
         </Box>
       </Box>
-    </HoverableCard>
+    </>
   );
 };
 
-export default CurvePreviewCard;
+export default AdvancedAreaChart;
