@@ -4,9 +4,7 @@ import { Outlet } from "react-router-dom";
 import { AccountCircle as AccountCircleIcon } from "@mui/icons-material";
 import { colors } from "@common/theme/utils/consts";
 
-type Props = {};
-
-const StatisticsRoot = (props: Props) => {
+const StatisticsRoot = () => {
   return (
     <Box sx={{ display: "flex", justifySelf: "stretch", minHeight: "calc(100vh - 54px)" }}>
       <SolidDrawer sx={{ width: "240px" }}>

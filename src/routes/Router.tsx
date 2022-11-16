@@ -11,13 +11,13 @@ import ClicksToConvert from "@pages/Statistics/subpages/ClicksToConvert/ClicksTo
 const routerConfig = (
   <Route path="/" element={<Layout />}>
     <Route index element={<Home />} />
-    <Route path="metrics" element={<Metrics />} />
-    <Route path="statistics" element={<StatisticsRoot />}>
+    <Route path="/metrics" element={<Metrics />} />
+    <Route path="/statistics" element={<StatisticsRoot />}>
       <Route index element={<Statistics />} />
-      <Route path="clicks-to-convert" element={<ClicksToConvert />} />
+      <Route path="/statistics/clicks-to-convert" element={<ClicksToConvert />} />
     </Route>
-    <Route path="login" element={<Login />} />
-    <Route path="settings" element={<Settings />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/settings" element={<Settings />} />
   </Route>
 );
 

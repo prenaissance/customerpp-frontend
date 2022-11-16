@@ -11,4 +11,6 @@ const colors = Object.freeze({
   LIGHT_GRAY: "#D9D9D9",
 });
 
-export { colors };
+const chartColors = [colors.LIGHT_BLUE, colors.PASTEL_PURPLE, colors.VIBRANT_RED, colors.PASTEL_YELLOW];
+
+export { colors, chartColors };

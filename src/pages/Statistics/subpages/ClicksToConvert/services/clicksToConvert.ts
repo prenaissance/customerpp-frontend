@@ -18,5 +18,20 @@ export const getClicksToConvertByDevice = async () => {
   const clicksToConvertData = filterFields(fields, statisticsData) as ClicksToConvertDf[];
 
   const groupedData = groupBy((item: ClicksToConvertDf) => item.device, clicksToConvertData);
-  return delayedRequest(groupedData) as Promise<Record<string, ClicksToConvertDf[]>>;
+  const groupedDataArray = Array.from(groupedData, ([field, values]) => ({
+    field,
+    values,
+  }));
+  return delayedRequest(groupedDataArray);
+};
+
+export const getClicksToConvertByLocale = async () => {
+  const clicksToConvertData = filterFields(fields, statisticsData) as ClicksToConvertDf[];
+
+  const groupedData = groupBy((item: ClicksToConvertDf) => item.locale, clicksToConvertData);
+  const groupedDataArray = Array.from(groupedData, ([field, values]) => ({
+    field,
+    values,
+  }));
+  return delayedRequest(groupedDataArray);
 };
