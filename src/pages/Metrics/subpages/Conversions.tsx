@@ -1,22 +1,36 @@
-import AdvancedLineChart from "@common/components/AdvancedLineChart/AdvancedLineChart";
+import MetricsChart from "@common/components/MetricsChart/MetricsChart";
+import { colors } from "@common/theme/utils/consts";
 import { Box, Chip } from "@mui/material";
 import { useState } from "react";
-import { getClicksToConvertByDevice, getClicksToConvertByLocale } from "./services/clicksToConvert";
+import { getConversionsDay, getConversionsMonth, getConversionsWeek } from "./services/conversionsService";
 
 const fields = [
   {
-    field: "Device",
-    request: getClicksToConvertByDevice,
+    field: "Today",
+    request: getConversionsDay,
+    color: colors.INDIGO,
+    nameFormatter: (hour: number) => {
+      const date = new Date(0);
+      date.setHours(hour);
+      return date.toLocaleTimeString("en-US", { hour: "2-digit", hour12: true });
+    },
   },
   {
-    field: "Locale",
-    request: getClicksToConvertByLocale,
+    field: "This week",
+    request: getConversionsWeek,
+    color: colors.PASTEL_GREEN,
+  },
+  {
+    field: "This month",
+    request: getConversionsMonth,
+    color: colors.LIGHT_BLUE,
   },
 ];
 
-const ClicksToConvert = () => {
+const Conversions = () => {
   const [selectedId, setSelectedId] = useState(0);
   const selectedField = fields[selectedId];
+  const { field, request, color, nameFormatter } = selectedField;
 
   return (
     <Box sx={{ m: "0 1.5rem", width: 1, display: "flex", justifyItems: "stretch", flexDirection: "column" }}>
@@ -50,10 +64,18 @@ const ClicksToConvert = () => {
           elevation: 1,
         }}
       >
-        <AdvancedLineChart id={selectedField.field} request={selectedField.request} dataKey="clicksToConvert" />
+        <MetricsChart
+          id={field}
+          name="Conversions"
+          request={request}
+          dataKey="value"
+          nameKey="period"
+          nameFormatter={nameFormatter}
+          color={color}
+        />
       </Box>
     </Box>
   );
 };
 
-export default ClicksToConvert;
+export default Conversions;

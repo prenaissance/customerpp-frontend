@@ -53,7 +53,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: `assets/${getFileName()}.js`,
-        publicPath: "",
+        publicPath: "/",
         assetModuleFilename: "assets/[name][hash][ext][query]",
         clean: true
     },
