@@ -59,12 +59,16 @@ const Navbar: FC = () => {
           }
           }
         >
-          <> <Box
-            component="img"
-            sx={{ width: "3rem", height: "3rem" }}
-            alt="logo"
-            src={require("/assets/images/logo.png")}
-          />
+          <>
+            <Link to="/">
+              <img
+                alt="logo"
+                src={require("/assets/images/logo.png")}
+                width={50}
+                height={50}>
+              </img>
+            </Link>
+
             <BootstrapButton variant="contained" disableRipple >
               <PageLink to="/" title="Home" />
             </BootstrapButton>

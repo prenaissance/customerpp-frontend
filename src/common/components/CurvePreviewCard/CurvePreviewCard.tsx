@@ -6,7 +6,7 @@ import { Line, LineChart } from "recharts";
 import HoverableCard from "../ui/HoverableCard/HoverableCard";
 
 type CurvePreviewCardProps = {
-  data: any[];
+  data?: any[];
   color?: string;
   icon?: ReactNode;
   height?: string;
