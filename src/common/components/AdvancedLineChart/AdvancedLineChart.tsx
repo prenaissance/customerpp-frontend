@@ -1,30 +1,27 @@
 import useWindowSize from "@common/hooks/useWindowSize";
-import { chartColors } from "@common/theme/utils/consts";
+import { chartColors, colors } from "@common/theme/utils/consts";
 import { Box, SxProps } from "@mui/material";
-import { useQuery } from "@tanstack/react-query";
 import { useRef } from "react";
 import { FC } from "react";
 import { Legend, Line, LineChart, Tooltip, YAxis } from "recharts";
 
-type DataGroup = {
-  field: string | number;
-  values: any[];
-};
-
 type AdvancedLineChartProps = {
-  id: string;
-  dataKey?: string;
+  name: string;
+  dataKey?: string | ((...args: any[]) => any);
   sx?: SxProps;
-  request: () => Promise<DataGroup[]>;
+  data: any[];
+  color?: string;
 };
 
-const AdvancedLineChart: FC<AdvancedLineChartProps> = ({ dataKey = "y", sx = {}, request, id }) => {
+const AdvancedLineChart: FC<AdvancedLineChartProps> = ({
+  dataKey = "y",
+  sx = {},
+  data = [],
+  name,
+  color = colors.PASTEL_PURPLE,
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const { width, height } = useWindowSize(ref);
-  const { data: groups } = useQuery(["advancedLineChart", id], request, {
-    initialData: [],
-  });
-  // console.log(groups);
 
   return (
     <Box
@@ -43,20 +40,18 @@ const AdvancedLineChart: FC<AdvancedLineChartProps> = ({ dataKey = "y", sx = {},
         <YAxis tick={{ fill: "white" }} />
         <Tooltip />
         <Legend />
-        {groups.map(({ field, values }, index) => (
-          <Line
-            dot={false}
-            name={field.toString()}
-            key={field}
-            type="monotone"
-            data={values}
-            dataKey={dataKey}
-            strokeWidth={2}
-            animationDuration={500}
-            stroke={chartColors[index % chartColors.length]}
-            connectNulls
-          />
-        ))}
+
+        <Line
+          dot={false}
+          name={name}
+          type="monotone"
+          data={data}
+          dataKey={dataKey}
+          strokeWidth={2}
+          animationDuration={500}
+          stroke={color}
+          connectNulls
+        />
       </LineChart>
     </Box>
   );

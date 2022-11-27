@@ -6,9 +6,9 @@ import Statistics from "@pages/Statistics/Statistics";
 import Login from "@pages/Login/Login";
 import Settings from "@pages/Settings/Settings";
 import StatisticsRoot from "@pages/Statistics/StatisticsRoot";
-import ClicksToConvert from "@pages/Statistics/subpages/ClicksToConvert/ClicksToConvert";
 import MetricsRoot from "@pages/Metrics/MetricsRoot";
 import Conversions from "@pages/Metrics/subpages/Conversions";
+import AdvancedStatistics from "@pages/Statistics/subpages/AdvancedStatistics/AdvancedStatistics";
 
 const routerConfig = (
   <Route path="/" element={<Layout />}>
@@ -19,7 +19,7 @@ const routerConfig = (
     </Route>
     <Route path="statistics" element={<StatisticsRoot />}>
       <Route index element={<Statistics />} />
-      <Route path="clicks-to-convert" element={<ClicksToConvert />} />
+      <Route path=":column" element={<AdvancedStatistics />} />
     </Route>
     <Route path="login" element={<Login />} />
     <Route path="settings" element={<Settings />} />
