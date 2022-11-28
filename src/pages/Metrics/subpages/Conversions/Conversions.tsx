@@ -6,7 +6,7 @@ import { getConversionsDay, getConversionsMonth, getConversionsWeek } from "./se
 
 const fields = [
   {
-    field: "Today",
+    field: "Last day",
     request: getConversionsDay,
     color: colors.INDIGO,
     nameFormatter: (hour: number) => {
@@ -16,12 +16,12 @@ const fields = [
     },
   },
   {
-    field: "This week",
+    field: "Last week",
     request: getConversionsWeek,
     color: colors.PASTEL_GREEN,
   },
   {
-    field: "This month",
+    field: "Last month",
     request: getConversionsMonth,
     color: colors.LIGHT_BLUE,
   },

@@ -4,8 +4,6 @@ import { Outlet } from "react-router-dom";
 import SolidDrawer from "@common/components/ui/SolidDrawer/SolidDrawer";
 import { colors } from "@common/theme/utils/consts";
 
-type Props = {};
-
 const MetricsRoot = () => {
   return (
     <Box sx={{ display: "flex", justifySelf: "stretch", minHeight: "calc(100vh - 54px)" }}>
