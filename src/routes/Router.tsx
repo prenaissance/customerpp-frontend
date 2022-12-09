@@ -10,6 +10,7 @@ import MetricsRoot from "@pages/Metrics/MetricsRoot";
 import Conversions from "@pages/Metrics/subpages/Conversions/Conversions";
 import AdvancedStatistics from "@pages/Statistics/subpages/AdvancedStatistics/AdvancedStatistics";
 import TotalClicks from "@pages/Metrics/subpages/TotalClicks/TotalClicks";
+import UniqueClicks from "@pages/Metrics/subpages/UniqueClicks/UniqueClicks";
 import AverageTimeToConvert from "@pages/Metrics/subpages/AverageTimeToConvert/AverageTimeToConvert";
 
 const routerConfig = (
@@ -19,6 +20,7 @@ const routerConfig = (
       <Route index element={<Metrics />} />
       <Route path="conversions" element={<Conversions />} />
       <Route path="total-clicks" element={<TotalClicks />} />
+      <Route path="unique-clicks" element={<UniqueClicks />} />
       <Route path="average-time-to-convert" element={<AverageTimeToConvert />} />
     </Route>
     <Route path="statistics" element={<StatisticsRoot />}>

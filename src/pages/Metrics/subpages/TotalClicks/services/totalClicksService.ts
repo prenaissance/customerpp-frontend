@@ -5,7 +5,7 @@ const getClicksPeriod = (timeframe: "day" | "week" | "month") => () => {
   const params = {
     timeframe,
   };
-  return client.get<GroupedMetric[]>("/metrics/totalClicks", { params }).then((response) => response.data);
+  return client.get<GroupedMetric[]>("/metrics/totalClicks/device", { params }).then((response) => response.data);
 };
 
 export { getClicksPeriod };

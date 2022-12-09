@@ -21,7 +21,7 @@ const Metrics: FC = () => {
       <Grid item lg={6} sm={6} xs={12} sx={{ lg: { height: "35%" }, xs: { height: "45%" } }}>
         <Link to="/metrics/total-clicks" style={{ textDecoration: "none" }}>
           <StatisticsPreviewCard
-            title="Total clicks"
+            title="Total page loads"
             icon={
               <Box
                 component="img"
@@ -31,7 +31,7 @@ const Metrics: FC = () => {
               />
             }
             data={clicksToConvertQuery.data || []}
-            description="Total number of clicks on a speciefic URL"
+            description="Total number of page loads on a Web page"
           />
         </Link>
       </Grid>
@@ -39,19 +39,25 @@ const Metrics: FC = () => {
       <Grid item lg={6} sm={6} xs={12} sx={{ lg: { height: "35%" }, xs: { height: "45%" } }}>
         <Link to="/metrics/unique-clicks" style={{ textDecoration: "none" }}>
           <PieChartPreviewCard
-            title="WIP Unique clicks"
+            title="Unique page loads"
             data={clicksToConvertQuery.data || []}
-            description="Number of unique clicks on a specific URL"
+            description="Number of unique page loads on a Web page (per person)"
           />
         </Link>
       </Grid>
 
       <Grid item lg={4} sm={6} xs={12} sx={{ lg: { height: "35%" }, xs: { height: "45%" } }}>
         <Link to="/metrics/average-time-to-convert" style={{ textDecoration: "none" }}>
-          <HalfPieChartPreviewCard
-            title="Average time to convert"
+          <StatisticsPreviewCard
+            title="Average time for event"
+            icon={<Box
+              component="img"
+              sx={{ width: "7.5rem", height: "7rem" }}
+              alt="AverageTime"
+              src={require("/assets/images/AverageTime.png")}
+            />}
             data={timeToConvertQuery.data || []}
-            description="Average time to convert"
+            description="Average time for a user to convert or to share experince"
           />
         </Link>
       </Grid>
@@ -77,7 +83,7 @@ const Metrics: FC = () => {
       <Grid item lg={4} sm={6} xs={12} sx={{ lg: { height: "35%" }, xs: { height: "45%" } }}>
         <Link to="/metrics/share-rate" style={{ textDecoration: "none" }}>
           <StatisticsPreviewCard
-            title="WIP Share rate"
+            title="Share rate"
             icon={
               <Box
                 component="img"

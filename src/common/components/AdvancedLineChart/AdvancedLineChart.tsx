@@ -3,7 +3,7 @@ import { chartColors, colors } from "@common/theme/utils/consts";
 import { Box, SxProps } from "@mui/material";
 import { useRef } from "react";
 import { FC } from "react";
-import { Legend, Line, LineChart, Tooltip, YAxis } from "recharts";
+import { Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
 type AdvancedLineChartProps = {
   name: string;
@@ -38,6 +38,7 @@ const AdvancedLineChart: FC<AdvancedLineChartProps> = ({
     >
       <LineChart height={height * 0.9} width={width * 0.9}>
         <YAxis tick={{ fill: "white" }} />
+        <XAxis tick={{ fill: "white" }} />
         <Tooltip />
         <Legend />
 

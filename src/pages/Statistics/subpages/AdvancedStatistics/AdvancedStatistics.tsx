@@ -15,6 +15,7 @@ const columnMapping = new Map([
   ["time-to-share", "timeToShare"],
 ]);
 const fields = ["Device", "Locale"];
+const Fields = ["lastday", "thisweek", "thismonth"]
 
 const AdvancedStatistics = () => {
   const [selectedId, setSelectedId] = useState(0);
@@ -27,7 +28,7 @@ const AdvancedStatistics = () => {
   const { data: groups } = useQuery({
     queryKey: ["clicksToConvert", mappedColumn, selectedField],
     queryFn: () =>
-      client.get<FieldStatisticsDF[]>(`/statistics/${mappedColumn}/${selectedField}`).then((res) => res.data),
+      client.get<FieldStatisticsDF[]>(`/statistics/${mappedColumn}/${selectedField}/thismonth`).then((res) => res.data),
     initialData: [],
   });
 
