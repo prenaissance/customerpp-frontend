@@ -59,7 +59,7 @@ const TotalClicks = () => {
           elevation: 1,
         }}
       >
-        <MetricsChart id={field} name="Conversions" request={request} dataKey="value" nameKey="period" color={color} />
+        <MetricsChart id={field} name="Total page loads" request={request} dataKey="value" nameKey="period" color={color} />
       </Box>
     </Box>
   );

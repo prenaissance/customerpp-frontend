@@ -4,8 +4,6 @@ import { useQuery } from "@tanstack/react-query";
 import { getClicksToConvert, getClicksToShare, getTimeToConvert, getTimeToShare } from "./services/metrics";
 import { Link } from "react-router-dom";
 import StatisticsPreviewCard from "@common/components/StatisticsPreviewCard/StatisticsPreviewCard";
-import PieChartPreviewCard from "@common/components/PieChartPreview/PieChartPreview";
-import HalfPieChartPreviewCard from "@common/components/HalfPieChartPreview/HalfPieChartPreview";
 
 const Metrics: FC = () => {
   const isLg = useMediaQuery("(min-width:1200px)");
@@ -25,7 +23,7 @@ const Metrics: FC = () => {
             icon={
               <Box
                 component="img"
-                sx={{ width: "7rem", height: "7rem" }}
+                sx={{ width: "8rem", height: "8rem" }}
                 alt="TotalClicks"
                 src={require("/assets/images/TotalClicks.png")}
               />
@@ -38,10 +36,16 @@ const Metrics: FC = () => {
 
       <Grid item lg={6} sm={6} xs={12} sx={{ lg: { height: "35%" }, xs: { height: "45%" } }}>
         <Link to="/metrics/unique-clicks" style={{ textDecoration: "none" }}>
-          <PieChartPreviewCard
-            title="Unique page loads"
+          <StatisticsPreviewCard
+            title="Top pages"
+            icon={<Box
+              component="img"
+              sx={{ width: "9,5rem", height: "9rem" }}
+              alt="UniqueClicks"
+              src={require("/assets/images/UniqueClicks.png")}
+            />}
             data={clicksToConvertQuery.data || []}
-            description="Number of unique page loads on a Web page (per person)"
+            description="Most popular pages depending on unique page loads"
           />
         </Link>
       </Grid>

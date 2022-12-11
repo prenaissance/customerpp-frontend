@@ -9,13 +9,12 @@ import FieldStatisticsDF from "@common/types/FieldStatisticsDF";
 import { chartColors } from "@common/theme/utils/consts";
 
 const columnMapping = new Map([
-  ["clicks-to-covert", "clicksToConvert"],
+  ["clicks-to-convert", "clicksToConvert"],
   ["clicks-to-share", "clicksToShare"],
   ["time-to-convert", "timeToConvert"],
   ["time-to-share", "timeToShare"],
 ]);
 const fields = ["Device", "Locale"];
-const Fields = ["lastday", "thisweek", "thismonth"]
 
 const AdvancedStatistics = () => {
   const [selectedId, setSelectedId] = useState(0);

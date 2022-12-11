@@ -38,7 +38,6 @@ const AdvancedLineChart: FC<AdvancedLineChartProps> = ({
     >
       <LineChart height={height * 0.9} width={width * 0.9}>
         <YAxis tick={{ fill: "white" }} />
-        <XAxis tick={{ fill: "white" }} />
         <Tooltip />
         <Legend />
 

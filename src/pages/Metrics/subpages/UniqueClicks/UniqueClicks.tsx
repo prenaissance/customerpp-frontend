@@ -1,24 +1,14 @@
-import MetricsChart from "@common/components/MetricsChart/MetricsChart";
 import { colors } from "@common/theme/utils/consts";
-import { Box, Chip } from "@mui/material";
+import { Box, Chip, List } from "@mui/material";
 import { useState } from "react";
-import { getUniqueClicksPeriod } from "./services/uniqueClicksSevrice";
+import { getUniqueClicks } from "./services/uniqueClicksSevrice";
+import UrlsList from "./services/UrlsList";
 
 const fields = [
     {
-        field: "Last day",
-        request: getUniqueClicksPeriod("day"),
+        field: "Top products",
+        request: getUniqueClicks("top-products"),
         color: colors.INDIGO,
-    },
-    {
-        field: "Last week",
-        request: getUniqueClicksPeriod("week"),
-        color: colors.PASTEL_GREEN,
-    },
-    {
-        field: "Last month",
-        request: getUniqueClicksPeriod("month"),
-        color: colors.LIGHT_BLUE,
     },
 ];
 
@@ -59,7 +49,7 @@ const UniqueClicks = () => {
                     elevation: 1,
                 }}
             >
-                <MetricsChart id={field} name="Conversions" request={request} dataKey="value" nameKey="period" color={color} />
+                <UrlsList id={field} request={request} />
             </Box>
         </Box>
     );
