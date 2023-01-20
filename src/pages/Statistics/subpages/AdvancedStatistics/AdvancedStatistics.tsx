@@ -9,25 +9,26 @@ import FieldStatisticsDF from "@common/types/FieldStatisticsDF";
 import { chartColors } from "@common/theme/utils/consts";
 
 const columnMapping = new Map([
-  ["clicks-to-convert", "clicksToConvert"],
-  ["clicks-to-share", "clicksToShare"],
-  ["time-to-convert", "timeToConvert"],
-  ["time-to-share", "timeToShare"],
+  ["clicks-to-covert", "convert"],
+  ["clicks-to-share", "share"],
+  ["time-to-convert", "convert"],
+  ["time-to-share", "share"],
 ]);
-const fields = ["Device", "Locale"];
+const fields = ["device", "locale"];
+
 
 const AdvancedStatistics = () => {
   const [selectedId, setSelectedId] = useState(0);
   const [subFieldId, setSubFieldId] = useState(0);
   const { column } = useParams<{ column: string }>();
-  const mappedColumn = columnMapping.get(column!) || "clicksToConvert";
+  const mappedColumn = columnMapping.get(column!) || "convert";
   const selectedField = fields[selectedId];
   const color = useMemo(() => chartColors[(selectedId + subFieldId) % chartColors.length], [selectedId, subFieldId]);
 
   const { data: groups } = useQuery({
-    queryKey: ["clicksToConvert", mappedColumn, selectedField],
+    queryKey: ["convert", mappedColumn, selectedField],
     queryFn: () =>
-      client.get<FieldStatisticsDF[]>(`/statistics/${mappedColumn}/${selectedField}/thismonth`).then((res) => res.data),
+      client.get<FieldStatisticsDF[]>(`/statistics/clicks/${mappedColumn}/${selectedField}/thismonth`).then((res) => res.data),
     initialData: [],
   });
 

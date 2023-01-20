@@ -12,6 +12,7 @@ import AdvancedStatistics from "@pages/Statistics/subpages/AdvancedStatistics/Ad
 import TotalClicks from "@pages/Metrics/subpages/TotalClicks/TotalClicks";
 import UniqueClicks from "@pages/Metrics/subpages/UniqueClicks/UniqueClicks";
 import AverageTimeToConvert from "@pages/Metrics/subpages/AverageTimeToConvert/AverageTimeToConvert";
+import ClicksToConvert from "@pages/Statistics/subpages/ClicksToConvert";
 
 const routerConfig = (
   <Route path="/" element={<Layout />}>
@@ -25,7 +26,7 @@ const routerConfig = (
     </Route>
     <Route path="statistics" element={<StatisticsRoot />}>
       <Route index element={<Statistics />} />
-      <Route path=":column" element={<AdvancedStatistics />} />
+      <Route path=":column" element={<ClicksToConvert />} />
     </Route>
     <Route path="login" element={<Login />} />
     <Route path="settings" element={<Settings />} />

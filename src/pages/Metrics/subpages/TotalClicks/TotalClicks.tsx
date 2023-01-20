@@ -6,17 +6,22 @@ import { getClicksPeriod } from "./services/totalClicksService";
 
 const fields = [
   {
-    field: "Last day",
+    field: "day",
     request: getClicksPeriod("day"),
-    color: colors.INDIGO,
+    color: colors.LIGHT_BLUE,
+    nameFormatter: (hour: number) => {
+      const date = new Date(0);
+      date.setHours(hour);
+      return date.toLocaleTimeString("en-US", { hour: "2-digit", hour12: true });
+    },
   },
   {
-    field: "Last week",
+    field: "week",
     request: getClicksPeriod("week"),
-    color: colors.PASTEL_GREEN,
+    color: colors.LIGHT_BLUE,
   },
   {
-    field: "Last month",
+    field: "month",
     request: getClicksPeriod("month"),
     color: colors.LIGHT_BLUE,
   },
@@ -25,7 +30,7 @@ const fields = [
 const TotalClicks = () => {
   const [selectedId, setSelectedId] = useState(0);
   const selectedField = fields[selectedId];
-  const { field, request, color } = selectedField;
+  const { field, request, color, nameFormatter } = selectedField;
 
   return (
     <Box sx={{ m: "0 1.5rem", width: 1, display: "flex", justifyItems: "stretch", flexDirection: "column" }}>
@@ -59,7 +64,14 @@ const TotalClicks = () => {
           elevation: 1,
         }}
       >
-        <MetricsChart id={field} name="Total page loads" request={request} dataKey="value" nameKey="period" color={color} />
+        <MetricsChart
+          id={field}
+          name="Total page loads"
+          request={request}
+          nameKey="period"
+          dataKey="value"
+          nameFormatter={nameFormatter}
+          color={color} />
       </Box>
     </Box>
   );
