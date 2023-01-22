@@ -1,5 +1,6 @@
 import MetricsChart from "@common/components/MetricsChart/MetricsChart";
 import { colors } from "@common/theme/utils/consts";
+import { dayOfWeekFormatter } from "@common/utilities/formatters";
 import { Box, Chip } from "@mui/material";
 import { useState } from "react";
 import { getConversionsDay, getConversionsMonth, getConversionsWeek } from "./services/conversionsService";
@@ -9,16 +10,12 @@ const fields = [
     field: "Last day",
     request: getConversionsDay,
     color: colors.INDIGO,
-    nameFormatter: (hour: number) => {
-      const date = new Date(0);
-      date.setHours(hour);
-      return date.toLocaleTimeString("en-US", { hour: "2-digit", hour12: true });
-    },
   },
   {
     field: "Last week",
     request: getConversionsWeek,
     color: colors.PASTEL_GREEN,
+    nameFormatter: dayOfWeekFormatter,
   },
   {
     field: "Last month",

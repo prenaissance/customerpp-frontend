@@ -1,5 +1,6 @@
 import MetricsChart from "@common/components/MetricsChart/MetricsChart";
 import { colors } from "@common/theme/utils/consts";
+import { dayOfWeekFormatter } from "@common/utilities/formatters";
 import { Box, Chip } from "@mui/material";
 import { useState } from "react";
 import { getAveragePeriod } from "./services/averageTimeToConvertService";
@@ -14,6 +15,7 @@ const fields = [
     field: "Last week",
     request: getAveragePeriod("week"),
     color: colors.PASTEL_GREEN,
+    nameFormatter: dayOfWeekFormatter,
   },
   {
     field: "Last month",
@@ -59,7 +61,14 @@ const AverageTimeToConvert = () => {
           elevation: 1,
         }}
       >
-        <MetricsChart id={field} name="Average time to convert" request={request} dataKey="value" nameKey="period" color={color} />
+        <MetricsChart
+          id={field}
+          name="Average time to convert"
+          request={request}
+          dataKey="value"
+          nameKey="period"
+          color={color}
+        />
       </Box>
     </Box>
   );

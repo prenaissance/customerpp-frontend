@@ -1,5 +1,6 @@
 import MetricsChart from "@common/components/MetricsChart/MetricsChart";
 import { colors } from "@common/theme/utils/consts";
+import { dayOfWeekFormatter } from "@common/utilities/formatters";
 import { Box, Chip } from "@mui/material";
 import { useState } from "react";
 import { getClicksPeriod } from "./services/totalClicksService";
@@ -9,16 +10,12 @@ const fields = [
     field: "day",
     request: getClicksPeriod("day"),
     color: colors.LIGHT_BLUE,
-    nameFormatter: (hour: number) => {
-      const date = new Date(0);
-      date.setHours(hour);
-      return date.toLocaleTimeString("en-US", { hour: "2-digit", hour12: true });
-    },
   },
   {
     field: "week",
     request: getClicksPeriod("week"),
     color: colors.LIGHT_BLUE,
+    nameFormatter: dayOfWeekFormatter,
   },
   {
     field: "month",
@@ -71,7 +68,8 @@ const TotalClicks = () => {
           nameKey="period"
           dataKey="value"
           nameFormatter={nameFormatter}
-          color={color} />
+          color={color}
+        />
       </Box>
     </Box>
   );

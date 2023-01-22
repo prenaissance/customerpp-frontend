@@ -37,13 +37,11 @@ const UniqueClicks = () => {
       </Box>
       <Box
         sx={{
-          width: 1,
-          height: 1,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           m: "1rem",
-          pr: "1.5rem",
+          mr: "4rem",
           bgcolor: "primary.main",
           borderRadius: "2rem",
           elevation: 1,

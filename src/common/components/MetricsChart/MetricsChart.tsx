@@ -35,6 +35,7 @@ const MetricsChart: FC<MetricsChartProps> = ({
   const { data } = useQuery(["advancedLineChart", id], request, {
     initialData: [],
   });
+  console.log(data);
 
   return (
     <Box
