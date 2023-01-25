@@ -22,6 +22,7 @@ const AdvancedLineChart: FC<AdvancedLineChartProps> = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { width, height } = useWindowSize(ref);
+  console.log(data);
 
   return (
     <Box
@@ -47,7 +48,7 @@ const AdvancedLineChart: FC<AdvancedLineChartProps> = ({
           type="monotone"
           data={data}
           dataKey={dataKey}
-          strokeWidth={2}
+          strokeWidth={3}
           animationDuration={500}
           stroke={color}
           connectNulls

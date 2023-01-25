@@ -1,21 +1,21 @@
 import AdvancedLineChart from "@common/components/AdvancedLineChart/AdvancedLineChart";
 import useWindowSize from "@common/hooks/useWindowSize";
 import { colors } from "@common/theme/utils/consts";
-import { Box, Chip, List } from "@mui/material";
+import { Box, Chip, List, Typography } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { useRef, useState } from "react";
-import { LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis, Line, Legend } from "recharts";
+import { LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis, Line, Legend, ReferenceLine } from "recharts";
 import { getClicksToConvert } from "../services/ClicksToConvertService";
 
 const fields = [
   {
     field: "Desktop",
-    request: getClicksToConvert,
+    request: () => getClicksToConvert().then((data) => data.Desktop),
     color: colors.INDIGO,
   },
   {
     field: "Mobile",
-    request: getClicksToConvert,
+    request: () => getClicksToConvert().then((data) => data.Mobile),
     color: colors.LIGHT_BLUE,
   },
 ];
@@ -27,13 +27,26 @@ const ClicksToConvert = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { width, height } = useWindowSize(ref);
   const {
-    data: { mean, values },
+    data: { filtered, notFiltered },
   } = useQuery([], request, {
     initialData: {
-      values: [],
-      mean: 0,
+      filtered: {
+        values: [],
+        mean: 0,
+      },
+      notFiltered: {
+        values: [],
+        mean: 0,
+      },
     },
   });
+  const { mean } = filtered;
+  const { mean: nonFilteredMean } = notFiltered;
+  const data = new Array(100).fill(null).map((_, index) => ({
+    x: index,
+    filtered: filtered.values[index],
+    nonFiltered: notFiltered.values[index],
+  }));
 
   return (
     <Box sx={{ m: "0 1.5rem", width: 1, display: "flex", justifyItems: "stretch", flexDirection: "column" }}>
@@ -66,17 +79,39 @@ const ClicksToConvert = () => {
           borderRadius: "2rem",
           elevation: 1,
         }}
+        ref={ref}
       >
-        <ResponsiveContainer width={width} height={height}>
-          <LineChart width={500} height={300} data={values}>
-            <XAxis dataKey="name" padding={{ left: 30, right: 30 }} />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <AdvancedLineChart data={values} name="filtered" dataKey="value" />
-            <AdvancedLineChart data={values} name="notFiltered" dataKey="value" />
-          </LineChart>
-        </ResponsiveContainer>
+        <LineChart width={width} height={height} data={data}>
+          <XAxis dataKey="x" padding={{ left: 30, right: 30 }} />
+          <YAxis padding={{ top: 30 }} />
+          <Tooltip />
+          <Legend />
+
+          <Line
+            dot={false}
+            name="non-filtered"
+            type="monotone"
+            dataKey={"nonFiltered"}
+            strokeWidth={2}
+            animationDuration={500}
+            stroke={colors.PASTEL_GREEN}
+            connectNulls
+          />
+          <Line
+            dot={false}
+            z={1}
+            width={2}
+            name="filtered"
+            type="monotone"
+            dataKey="filtered"
+            strokeWidth={3}
+            animationDuration={500}
+            stroke={colors.LIGHT_BLUE}
+            connectNulls
+          />
+          <ReferenceLine y={mean} stroke={colors.LIGHT_BLUE} strokeDasharray="3 3" />
+          <ReferenceLine y={nonFilteredMean} stroke={colors.PASTEL_GREEN} strokeDasharray="3 3" />
+        </LineChart>
       </Box>
     </Box>
   );

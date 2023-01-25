@@ -1,4 +1,8 @@
 export type GigaCringeStatistics = {
-  mean: number;
-  values: number[];
+  [key in "Desktop" | "Mobile"]: {
+    [key in "filtered" | "notFiltered"]: {
+      mean: number;
+      values: number[];
+    };
+  };
 };
